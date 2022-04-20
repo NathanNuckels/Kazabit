@@ -25,4 +25,13 @@ public class Room{
 		//wich is 'an Item is on the floor'
 		itemDesc.add("is on the floor");
 	}
+
+	public Room getNorth(){return north;}
+	public Room getSouth(){return south;}
+	public Room getEast(){return east;}
+	public Room getWest(){return west;}
+	public String getName(){return name;}
+	public String getDesc(){return desc;}
+	public ArrayList<item.Item> getItems(){return items;}
+	public ArrayList<String> getItemDesc(){return itemDesc;}
 }
