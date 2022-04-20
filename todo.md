@@ -6,9 +6,7 @@ If Github can't display this correctly, view the raw file
 
 
 - [x] class player.Player
-- [ ] interface player.Porperty
-	- [ ] class player.Ability implements Property
-- [ ] class room.Room
+- [x] class room.Room
 - [ ] class item.Item
 - [ ] class item.Container
 - [ ] interface item.Placable
