@@ -1,0 +1,20 @@
+package item;
+
+public class Item{
+	protected String id,name,desc;
+	protected boolean placeible,dropable,tradeable,sellible;
+	protected int stackSize;
+	
+	public Item(){
+		id = "item"; //id must be all lowercase
+		name = "Item"; //name the player sees
+		desc = "An unconfigured item."; //lore text
+		placeible = false; //can the item be placed in the world?
+		dropable = true; //can the item be thrown away?
+		tradeable = true; //can it be traded?
+		sellible = true; //is it for sale?
+		stackSize = 999; //how much of the item can be put in one slot.
+		//I really feel like there should be more stuff here but I guess thats it.....
+	}
+}
+

@@ -7,7 +7,8 @@ If Github can't display this correctly, view the raw file
 
 - [x] class player.Player
 - [x] class room.Room
-- [ ] class item.Item
+- [x] class item.Item
+- [ ] class item.ContainerSlot
 - [ ] class item.Container
 - [ ] interface item.Placable
 	- [ ] item.Box extends Container implements Placable
