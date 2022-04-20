@@ -16,5 +16,14 @@ public class Item{
 		stackSize = 999; //how much of the item can be put in one slot.
 		//I really feel like there should be more stuff here but I guess thats it.....
 	}
+
+	public String getId(){return id}
+	public String getName(){return name}
+	public String getDesc(){return desc}
+	public boolean getPlacible(){return placible}
+	public boolean getDropable(){return dropable}
+	public boolean getTradeable(){return tradeable}
+	public boolean getSellible(){return sellible}
+	public int getStacksize(){return stackSize}
 }
 
