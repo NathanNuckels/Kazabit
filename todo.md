@@ -5,7 +5,7 @@ If Github can't display this correctly, view the raw file
 ### Base classes
 
 
-- [ ] class player.Player
+- [x] class player.Player
 - [ ] interface player.Porperty
 	- [ ] class player.Ability implements Property
 - [ ] class room.Room
