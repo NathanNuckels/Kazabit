@@ -22,4 +22,5 @@ public class Container{
 			slots.get(i).clear();
 		}
 	}
+	public getSlot(int i){return slots.get(i);}
 }

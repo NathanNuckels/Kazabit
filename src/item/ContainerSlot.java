@@ -24,10 +24,12 @@ public class ContainerSlot{
 	}
 
 	public void take(int i) throws item.SlotException{
-		if ((ammount-1)>=0){
-			ammount-=i;
-		} else {
-			throw new item.SlotException();
+		if (ammount!=-1){
+			if ((ammount-i)>=0){
+				ammount-=i;
+			} else {
+				throw new item.SlotException();
+			}
 		}
 	}
 	public void clear(){
@@ -35,6 +37,10 @@ public class ContainerSlot{
 		ammount = 0;
 	}
 	private boolean checkStack(int i){
-		return (i>type.getStackSize());
+		if (ammount!=-1){
+			return (i>type.getStackSize());
+		} else {
+			return true;
+		}
 	}
 }

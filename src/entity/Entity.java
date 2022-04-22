@@ -4,7 +4,7 @@ public class Entity{
 	protected String id,name,wiki;
 	protected item.Container inventory;
 	protected int health,maxHealth,attackMin,attackMax,levelMin,levelMax,level,expMin,expMax,exp;
-	protected boolean hostile,canAttack,isEvil;
+	protected boolean hostile,canAttack,isEvil,canBeAttacked;
 
 	public Entity(){
 		id = "entity"; //all lowercase internal name
@@ -23,6 +23,7 @@ public class Entity{
 		hostile = false; //Hostile entitys attack the player once they enter the room
 		canAttack = true; //Can it deal damage to the player?
 		isEvil = false; //Killing a good entity gets you bad alignment, killing an evil entity gives you a good alignment. choose whisly.....
+		canBeAttacked = true; //Some special entitys cannot be attacked such as shop keepers
 		//drops some ammount of xp between min and max.
 		//to drop the same ammount every time, set min and max tu null and hardcode the exp varible
 		expMin = 5;
@@ -46,10 +47,11 @@ public class Entity{
 	public int getLevelmin(){return levelMin;}
 	public int getLevelmax(){return levelMax;}
 	public int getLevel(){return level;}
+	public int getExpmin(){return expMin;}
+	public int getExpmax(){return expMax;}
+	public int getExp(){return exp;}
 	public boolean getHostile(){return hostile;}
 	public boolean getCanattack(){return canAttack;}
 	public boolean getIsevil(){return isEvil;}
-	public double getExpmin(){return expMin;}
-	public double getExpmax(){return expMax;}
-	public double getExp(){return exp;}
+	public boolean getBeAttacked(){return canBeAttacked;}
 }
