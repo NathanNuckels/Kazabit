@@ -9,7 +9,7 @@ public class Box extends item.Item{
 		name = "Box";
 		desc = "An example item that holds 20 other items.";
 		placeible = true;
-		dropible = true;
+		dropable = true;
 		tradeable = true;
 		sellible = true;
 		stackSize = 1;

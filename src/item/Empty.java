@@ -5,10 +5,9 @@ public class Empty extends item.Item{
 		id = null;
 		name = null;
 		desc = null;
-		placeible = null;
-		dropable = null;
-		tradible = null;
-		sellible = null;
-		stacksize = null;
+		placeible = false;
+		dropable = false;
+		tradeable = false;
+		sellible = false;
 	}
 }

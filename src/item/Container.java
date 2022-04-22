@@ -1,5 +1,5 @@
 package item;
-
+import java.util.ArrayList;
 public class Container{
 	protected ArrayList<item.ContainerSlot> slots;
 
@@ -10,15 +10,15 @@ public class Container{
 		}
 	}
 
-	public Contiainer(int x){
-		slots = new ArrayList<item.ContainerSLot>();
+	public Container(int x){
+		slots = new ArrayList<item.ContainerSlot>();
 		for (int i=0;i<x;i++){
 			slots.add(new item.ContainerSlot());
 		}
 	}
 
-	public vodi clear(){
-		for (int i=0;i<slots.length();i++){
+	public void clear(){
+		for (int i=0;i<slots.size();i++){
 			slots.get(i).clear();
 		}
 	}

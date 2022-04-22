@@ -1,12 +1,12 @@
 package room;
-
+import java.util.ArrayList;
 public class Room{
 	protected Room north,south,east,west;
 	protected String name,desc;
 	protected ArrayList<item.Item> items;
 	protected ArrayList<String> itemDesc;
 	
-	public Room{
+	public Room(){
 		north = null; //room to the north
 		south = null; //room to the south
 		east = null; //room to the east
@@ -15,8 +15,8 @@ public class Room{
 		name = "Undefined room";
 		// text for when the user rune 'look'
 		desc = "The programers of this MUD are dumb if you see this";
-		items = new ArrayList<item.Items>();
-		itemDesc = new ArrayList<Stirng>();
+		items = new ArrayList<item.Item>();
+		itemDesc = new ArrayList<String>();
 
 		//Creates demo item
 		items.add(new item.Item());
