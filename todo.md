@@ -10,10 +10,10 @@ If Github can't display this correctly, view the raw file
 - [x] class item.Item
 - [x] class item.ContainerSlot
 - [x] class item.Container
-	- [ ] item.Box extends Container
-- [ ] entity.Entity
-	- [ ] entity.HostileEntity extends Entity
-	- [ ] entity.PassiveEntity extends Entity
+	- [x] item.Box extends Item / Container
+- [x] entity.Entity
+	- [x] entity.HostileEntity extends Entity
+	- [x] entity.PassiveEntity extends Entity
 - [ ] InputParcer
 - [ ] Main
 ### Rooms
